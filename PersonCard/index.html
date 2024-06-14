@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-body h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .card-body p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="person1.jpg" alt="User Photo">
+        <div class="card-body">
+            <h3>Вероника Ульянова</h3>
+            <p>Email: veronica.ulyanova@mail.ru</p>
+            <p>Дата рождения: 01.05.2004</p>
+            <p>Город: Москва</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="person2.jpg" alt="User Photo">
+        <div class="card-body">
+            <h3>Сергей Петров</h3>
+            <p>Email: sergey.petrov@google.com</p>
+            <p>Дата рождения: 15.05.1999</p>
+            <p>Город: Санкт-Петербург</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="person3.jpg" alt="User Photo">
+        <div class="card-body">
+            <h3>Лариса Смирнова</h3>
+            <p>Email: larisa.smirnova@yandex.ru</p>
+            <p>Дата рождения: 20.08.1999</p>
+            <p>Город: Новосибирск</p>
+        </div>
+    </div>
+</body>
+</html>
